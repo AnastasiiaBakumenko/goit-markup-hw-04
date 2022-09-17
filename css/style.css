@@ -147,6 +147,7 @@ color: #2196F3;
 .contact-links .link:focus
 {
 color: #2196F3;
+fill: #2196F3;
 }
 .contact-list:not(:last-child)
 {
@@ -434,20 +435,31 @@ padding: 30px 10px;
     padding:0;
     margin-top: 16px;
     justify-content: center;
+    align-items: center;
 }
-.account-link{
-    padding: 28px 11px 11px;
-}
-
 .account-list:not(:last-child)
 {
         margin-right: 10px;
 }
-.account-list:hover{
-    
+.account-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+ 
 }
 .account
 {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
+    fill:#afb1b8;
+}
+.account:hover{
+fill: #fff;
+}
+.team-accounts .account-list:hover{
+    background-color: #2196F3;
+    border-radius: 50%;
+ 
 }
