@@ -120,6 +120,8 @@ color: #2196F3;
 /*Contact footer*/
 .footer-contact{
     padding: 60px 0;
+    height: 252px;
+    flex-wrap: wrap;
 }
 .contact-style
 {
@@ -179,6 +181,37 @@ color:#2196F3;
 .contact .contact-phone:focus
 {
     color: #2196F3;
+}
+
+.social-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.social-a{
+display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social{
+    list-style: none;
+}
+
+.social-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:44px;
+    height: 44px;
+    background-color: #2196F3;
+    border-radius: 50%;
+}
+.social-link{
+    fill:#fff;
+    width: 20px;
+    height: 20px;
 }
 /*Portfolio*/
 .background-portfolio{
@@ -447,19 +480,55 @@ padding: 30px 10px;
     align-items: center;
     width: 44px;
     height: 44px;
- 
 }
-.account
-{
-    width: 20px;
-    height: 20px;
-    fill:#afb1b8;
-}
-.account:hover{
-fill: #fff;
-}
-.team-accounts .account-list:hover{
-    background-color: #2196F3;
+.account-link{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    color: #AFB1B8;
+    background-color: #fff;
+    padding: 12px;
     border-radius: 50%;
  
+}
+.account-link:hover{
+    color:#fff;
+    background-color: #2196F3;
+}
+.account{
+    fill:currentColor;
+    width: 20px;
+    height: 20px;
+}
+.team-accounts .account-list:hover {
+    background-color: #2196F3;
+    border-radius: 50%;
+
+}
+/*Clients*/
+.clients-title{
+    font-weight: 42px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.clients{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-basis: calc((100%-150px)/6);
+    padding-bottom: 94px;
+}
+.clients-list{
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.clients-list:not(:first-child){
+margin-left: 30px;
+}
+.clients-logo{
+    width: 106px;
+    height: 60px;
+    margin: 15px 31px;
 }
