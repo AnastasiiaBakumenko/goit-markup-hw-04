@@ -142,6 +142,9 @@ color: #2196F3;
     display: flex;
     align-items: center;
 }
+.contact-links svg{
+    fill:currentColor;
+}
 .contact-links .link
 {
     font-weight:500;
@@ -153,7 +156,7 @@ color: #2196F3;
 .contact-links .link:focus
 {
 color: #2196F3;
-fill: #2196F3;
+fill:#2196F3;
 }
 .contact-list:not(:last-child)
 {
@@ -316,7 +319,7 @@ color:#2196F3;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-width: 1600px;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     padding:200px 0;
