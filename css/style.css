@@ -69,7 +69,7 @@ letter-spacing: 0.03em;
 .header-nav{
 display: flex;
 align-items: center;
-padding: 25px 0;
+padding: 17px 0;
 }
 
 .navigation
@@ -123,9 +123,9 @@ color: #2196F3;
     height: 252px;
     flex-wrap: wrap;
 }
-.aaa{
+.footer-position{
     display: flex;
-
+    align-items: baseline;
 }
 .contact-style
 {
@@ -201,38 +201,39 @@ color:#2196F3;
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: #FFFFFF;
-    padding-top: 15px;
+
     margin-bottom: 20px;
 }
-.social-a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.social{
+.social {
     padding: 0;
     margin: 0;
     list-style: none;
     display: flex;
     justify-content: center;
 }
-
-.social-list{
+.social-list {
     display: flex;
     align-items: center;
     justify-content: center;
-    width:44px;
-    height: 44px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
+
+    cursor: pointer;
 }
-.social-list:not(:first-child)
-{
+
+.social-list:not(:first-child) {
     margin-left: 10px;
 }
-.social-list:hover,
-.social-list:focus{
-    background-color: #2196F3;
+.social-a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+}
+.social-a:hover,
+.social-a:focus{
+    background-color: rgba(33, 150, 243, 1);
 }
 .social-link{
     fill:#fff;
@@ -284,10 +285,16 @@ color:#2196F3;
     gap: 30px;
     padding-bottom: 94px;
 }
-.project-list:hover,
-.project-list:focus{
+.project-link{
+    display: block;
+    color:#212121;
+}
+.project-link:hover,
+.project-link:focus{
+    cursor: pointer;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .project{
     padding: 20px 24px;
     border-left: 1px solid #EEEEEE;
@@ -380,7 +387,7 @@ color:#2196F3;
 .features-list:not(:first-child){
     margin-left: 30px;
 }
-.features-list::before{
+/*.features-list::before{
     display:block;
     content:"";
     height: 120px;
@@ -400,6 +407,29 @@ color:#2196F3;
 }
 .icon-astronaut::before{
     background-image: url("../images/astronaut.svg");
+}
+*/
+.icon{
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    margin-bottom: 30px;
+}
+.icon-antenna{
+background-image: url("/images/antenna.svg");
+}
+.icon-clock{
+    background-image: url("/images/clock.svg");
+}
+.icon-diagram{
+    background-image: url("/images/diagram.svg");
+}
+.icon-astronaut{
+    background-image: url("/images/astronaut.svg");
 }
 .features-title
 {
@@ -507,19 +537,19 @@ padding: 30px 10px;
 .account-list{
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
+    align-items: center;  
+    cursor: pointer;
 }
 .account-link{
     display: flex;
-        justify-content: center;
+    justify-content: center;
         align-items: center;
+    width: 44px;
+        height: 44px;
     color: #AFB1B8;
-    background-color: #fff;
-    padding: 12px;
-    border-radius: 50%;
- 
+    border: none;
+    /*background-color: transparent;*/
+    border-radius: 50%; 
 }
 .account-link:hover,
 .account-link:focus
@@ -532,11 +562,10 @@ padding: 30px 10px;
     width: 20px;
     height: 20px;
 }
-.team-accounts .account-list:hover {
+/*.team-accounts .account-list:hover {
     background-color: #2196F3;
     border-radius: 50%;
-
-}
+}*/
 /*Clients*/
 .clients-title{
     font-weight: 42px;
@@ -553,19 +582,15 @@ padding: 30px 10px;
     padding-bottom: 94px;
 }
 .clients-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    
+    cursor:pointer;   
 }
 .clients-list:not(:first-child){
 margin-left: 30px;
-}
-.clients-list:hover,
-.clients-list:focus
-{
-    border: 1px solid #2196F3;
 }
 .clients-logo{
     width: 106px;
@@ -579,11 +604,15 @@ margin-left: 30px;
     fill:#2196F3;
 }
 .client-link{
+    display: block;
     padding: 0;
     margin: 0;
     color:#AFB1B8 ;
+    border: 1px solid #AFB1B8;
+        border-radius: 4px;
 }
 .client-link:hover,
 .client-link:focus{
 color: #2196F3;
+border: 1px solid #2196F3;
 }
