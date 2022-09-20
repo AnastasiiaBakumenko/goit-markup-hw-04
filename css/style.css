@@ -410,6 +410,9 @@ color:#2196F3;
 }
 */
 .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
@@ -419,9 +422,7 @@ color:#2196F3;
     background-size: auto;
     margin-bottom: 30px;
 }
-.icon-antenna{
-background-image: url("../images/antenna.svg");
-}
+
 .icon-clock{
     background-image: url("../images/clock.svg");
 }
@@ -535,17 +536,15 @@ padding: 30px 10px;
         margin-right: 10px;
 }
 .account-list{
-    display: flex;
-    justify-content: center;
-    align-items: center;  
+
     cursor: pointer;
 }
 .account-link{
     display: flex;
     justify-content: center;
-        align-items: center;
+    align-items: center;
     width: 44px;
-        height: 44px;
+    height: 44px;
     color: #AFB1B8;
     border: none;
     /*background-color: transparent;*/
@@ -585,8 +584,6 @@ padding: 30px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
-    height: 92px;
     cursor:pointer;   
 }
 .clients-list:not(:first-child){
@@ -596,7 +593,7 @@ margin-left: 30px;
     width: 106px;
     height: 60px;
     fill:currentColor;
-    margin: 16px 32px;
+   
    
 }
 .clients-logo:hover,
@@ -604,7 +601,11 @@ margin-left: 30px;
     fill:#2196F3;
 }
 .client-link{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
     padding: 0;
     margin: 0;
     color:#AFB1B8 ;
